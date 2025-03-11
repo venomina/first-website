@@ -12,7 +12,9 @@ a {
 }
 
 body {
-    background-position: right bottom, left top;
+    background-size: cover;           
+    background-repeat: no-repeat;
+    background-position: center center; 
     background-image: url('https://img.freepik.com/photos-gratuite/texture-feuille-verte-fond-texture-feuille_501050-120.jpg?t=st=1741702361~exp=1741705961~hmac=bdc36acc846299d6e66d8aa74879c17bf6dde6992db42405905629aa1194eb0d&w=1380');
   }
   
