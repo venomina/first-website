@@ -1,82 +1,83 @@
 /*Reset navbar.css*/
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
-nav{
+a {
+    color: rgb(182, 239, 185);
+    text-decoration: none;
+}
+
+nav {
     width: 100%;
     margin: 0 auto;
-    background-color: rgb(38, 111, 70);
+    background-color: rgb(73, 159, 110);
     position: sticky;
     top: 0px;
+    height: 5%;
 }
 
-nav ul{
-        list-style-type: none;
+nav ul {
+    list-style-type: none;
+    height: 100%;
 }
 
-nav ul li{
+nav ul li {
+    display: flex;
     float: left;
-    width: 40%;
-    text-align: left;
+    width: 25%;
+    height: 100%;
+    position: relative;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
 }
 
-nav ul::after{
+nav ul::after {
     content: "";
     display: table;
     clear: both;
 }
 
-nav a:hover{
+nav a:hover {
     color: rgb(134, 230, 134);
     border-bottom: 2px green;
 }
 
-.sous{
+.sous {
     display: none;
     box-shadow: 0px 1px 2px #4fb6c9;
-    background-color:white;
+    background-color: white;
 }
 
-nav > ul li:hover .sous{
-        display: block;
+nav>ul li:hover .sous {
+    display: block;
 }
 
-.sous li{
+.sous li {
     float: none;
     width: 100%;
-    text-align: left;
+    text-align: center;
 }
 
-.sous a{
+.sous a {
     padding: 10px;
     border-bottom: none;
+    color: rgb(182, 239, 185);
 }
 
-.sous a:hover{
+.sous a:hover {
     border-bottom: none;
-/*    background-color: rgba(251, 247, 247, 0);*/
+    /*    background-color: rgba(251, 247, 247, 0);*/
 }
 
-.deroulant > a::after{
-    content: "ˬ";
-    font-size: 12px
-}
-
-.sous{
+.sous {
     display: none;
     box-shadow: 0px 1px 2px #a472e9;
     background-color: #4caf61;
-    position: absolute;
+    position:absolute;
     width: 100%;
     z-index: 1000;
-}
-
-nav ul li{
-        float: left;
-        width: 25%;
-        text-align: center;
-        position: relative;
 }
